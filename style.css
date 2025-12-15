@@ -58,7 +58,7 @@ p {
 .intro-image img {
   width: 100vw;
   height: 100vh;
-  object-fit: cover; /* 화면 꽉 채움 */
+  object-fit: cover; 
   cursor: pointer;
 }
 
@@ -82,7 +82,7 @@ p {
 .menu-bg {
   position: absolute;
   inset: 0;
-  background-image: url("image1207/mu.jpeg");
+  background-image: url("mu.jpeg");
   background-size: cover;
   background-position: center;
 }
@@ -204,7 +204,7 @@ p {
 
 #screen-essential {
   position: relative;
-  background: url("image1207/ps.jpeg") center / cover no-repeat;
+  background: url("ps.jpeg") center / cover no-repeat;
 }
 
 #screen-essential::before {
@@ -222,7 +222,7 @@ p {
 
 #screen-optional {
   position: relative;
-  background: url("image1207/bbg.jpeg") center / cover no-repeat;
+  background: url("bbg.jpeg") center / cover no-repeat;
 }
 
 #screen-optional::before {
@@ -240,7 +240,7 @@ p {
 
 #screen-anatomy {
   position: relative;
-  background: url("image1207/bdo.jpeg") center / cover no-repeat;
+  background: url("bdo.jpeg") center / cover no-repeat;
 }
 
 #screen-anatomy::before {
@@ -271,7 +271,7 @@ p {
 
 #screen-outro {
   position: relative;
-  background: url("image1207/ou.jpeg") center / cover no-repeat;
+  background: url("ou.jpeg") center / cover no-repeat;
 }
 
 #screen-outro::before {
