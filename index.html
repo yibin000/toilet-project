@@ -177,7 +177,7 @@
       item.addEventListener('click', e => {
         e.stopPropagation();
         index = (index + 1) % images.length;
-        img.src = 'image1207/' + images[index];
+        img.src = images[index];
         overlayTitle.textContent = item.dataset.title;
         overlayText.textContent = texts[index];
         overlay.classList.add('active');
