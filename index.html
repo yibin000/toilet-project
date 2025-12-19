@@ -3,207 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>화장실</title>
+  <title>화장실 공간 구성</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <section class="screen active intro-image" id="screen-intro">
-    <img src="mu1.jpeg" alt="intro" />
-    <div class="hint">tap to enter</div>
-  </section>
+  <div class="cursor" id="cursor"></div>
 
-  <section class="screen menu" id="screen-menu">
+  <section class="screen menu active" id="screen-menu">
     <div class="menu-bg"></div>
-
     <div class="menu-content">
-      <h1>화장실 구조도</h1>
-      <p class="menu-desc">
-        화장실은 단순한 공간이 아니라 기능과 구조를 가진 하나의 시스템이다.
-      </p>
+      <h1>화장실 구성요소와 공간</h1>
+      <p class="menu-desc">기능과 구조를 가진 하나의 시스템</p>
       <div class="nav">
         <button data-target="screen-essential">필수 구성 요소</button>
         <button data-target="screen-optional">선택 구성 요소</button>
-        <button data-target="screen-anatomy">공간 해부</button>
-        <button data-target="screen-outro">끝맺음</button>
+        <button data-target="screen-anatomy">공간</button>
       </div>
     </div>
   </section>
 
   <section class="screen" id="screen-essential">
-    <div class="back" data-back role="button" aria-label="back"></div>
-    <h2>필수 구성 요소</h2>
-
-      <div class="grid">
-      <div class="item" data-title="변기" data-images="b1.jpeg,b2.jpeg" data-texts="닫힘,열림">
-        <img src="b.jpeg" alt="">
-        <span>변기</span>
+    <div class="back" data-back role="button"></div>
+    <div class="split-view">
+      <div class="view-left">
+        <img class="main-display" src="image/b.jpeg">
+        <h2 class="main-title">변기</h2>
+        <p class="main-desc">도서관1층 화장실</p> 
       </div>
-
-      <div class="item" data-title="세면대" data-images="s1.jpeg,s2.jpeg,s3.jpeg" data-texts="막 닦아낸 표면,고장,사용이 반복된 흔적">
-        <img src="s.jpeg" alt="">
-        <span>세면대</span>
-      </div>
-
-      <div class="item" data-title="배수구" data-images="d.jpeg,d1.jpeg" data-texts="물이 흐르는 순간,모든 흔적이 모이는 지점">
-        <img src="d.jpeg" alt="">
-        <span>배수구</span>
-      </div>
-
-      <div class="item" data-title="화장지 디스펜서" data-images="r1.jpeg,r2.jpeg,r3.jpeg" data-texts="있을 수도 없을 수도,기울어진 상태,디스펜서의 부재">
-        <img src="r.jpeg" alt="">
-        <span>화장지 디스펜서</span>
-      </div>
-
-      <div class="item" data-title="환풍기" data-images="v1.jpeg,v2.jpeg,v3.jpeg" data-texts="공기의 이동,항상 작동하지만 잘 모르는..,사각형 환풍기">
-        <img src="v.jpeg" alt="">
-        <span>환풍기</span>
-      </div>
-
-      <div class="item" data-title="물비누" data-images="w1.jpeg,w2.jpeg" data-texts="두 개의 버튼,물과 손 사이에서 위생이 완성된다">
-        <img src="w.jpeg" alt="">
-        <span>물비누</span>
+      <div class="view-right">
+        <div class="item" data-desc="양변기는 걸쳐앉아서 볼일을 보는 변기로 '서양식 변기', '좌변기', '양변기'라고도 한다."><img src="image/b.jpeg"><span>변기</span></div>
+        <div class="item" data-desc="인간이 주로 대소변 처리에 사용하는 위생 기구이자 건축 부재이다."><img src="image/b1.jpeg"><span>변기</span></div>
+        <div class="item" data-desc="변기의 형태에 따라 원피스 변기, 투피스 변기로 나뉜다."><img src="image/b2.jpeg"><span>변기</span></div>
+        <div class="item" data-desc="세면대는 얼굴을 씻을 수 있도록 만든 위생 기구이다. 보통 점토를 구워서 만든 도기 재질이다."><img src="image/s.jpeg"><span>세면대</span></div>
+        <div class="item" data-desc="조예관 1층 세면대"><img src="image/s1.jpeg"><span>세면대</span></div>
+        <div class="item" data-desc="조예관 1층 고장난 세면대"><img src="image/s2.jpeg"><span>세면대</span></div>
+        <div class="item" data-desc="오수 등을 배출하기 위하여 만들어진 구멍을 말한다. 배수구로 흐른 물들은 배수로를 통해 배출된다."><img src="image/d.jpeg"><span>배수구</span></div>
+        <div class="item" data-desc="바닥에 설치되어 주방, 욕실, 발코니 등에서 물을 배출한다. 일반적으로 직사각형이나 정사각형, 원형 형태이다."><img src="image/d1.jpeg"><span>배수구</span></div>
       </div>
     </div>
   </section>
 
-  <section class="screen" id="screen-optional">
-    <div class="back" data-back role="button" aria-label="back"></div>
-    <h2>선택 구성 요소</h2>
-    <p class="sub-desc">
-      반드시 존재하지 않아도 되지만,<br>
-      공간의 성격을 은근히 바꾸는 요소들.
-    </p>
-
-    <div class="grid optional">
-      <div class="item" data-title="거울" data-images="mi1.jpeg" data-texts="확인하는 순간 공간이 두 배로 확장된다">
-        <img src="mi.jpeg" alt="">
-        <span>거울</span>
+  <section class="screen plain-bg" id="screen-optional">
+    <div class="back" data-back role="button"></div>
+    <div class="split-view">
+      <div class="view-left">
+        <img class="main-display" src="image/mi.jpeg">
+        <h2 class="main-title">거울</h2>
+        <p class="main-desc">거울은 상을 반사하는 물체이다.</p>
       </div>
-
-      <div class="item" data-title="휴지통" data-images="bi.jpeg" data-texts="비워지기 전까지 잘 보이지 않는다">
-        <img src="bi.jpeg" alt="">
-        <span>휴지통</span>
-      </div>
-
-      <div class="item" data-title="손건조기" data-images="dr1.jpeg,dr2.jpeg" data-texts="물 이후의 단계,소리로 존재를 알린다">
-        <img src="dr.jpeg" alt="">
-        <span>손건조기</span>
-      </div>
-
-      <div class="item" data-title="방향제 디스펜서" data-images="a.jpeg" data-texts="냄새를 지우려는 시도,공기의 성격을 바꾼다">
-        <img src="a.jpeg" alt="">
-        <span>방향제 디스펜서</span>
+      <div class="view-right">
+        <div class="item" data-desc="면대 위에 설치되어 얼굴, 상반신, 손 등을 비추는 반사면으로, 주로 세수·양치 등 위생 활동을 돕는 용도로 사용된다."><img src="image/mi.jpeg"><span>거울</span></div>
+        <div class="item" data-desc="손을 닦은 후, 손의 물기를 바람으로 제거하는 전자제품."><img src="image/dr1.jpeg"><span>손건조기</span></div>
+        <div class="item" data-desc="청소 후 안전을 위해 설치하는 표지판."><img src="image/ou.jpeg"><span>미끄럼 주의 표지판</span></div>
+        <div class="item" data-desc="겨울철 실내 온도를 유지하는 장치이다."><img src="image/ri.jpeg"><span>라디에이터</span></div>
+        <div class="item" data-desc="청결 관리를 위한 화학 세제."><img src="image/ch.jpeg"><span>세제</span></div>
+        <div class="item" data-desc="조예관에서 누군가 쓰고 놓아둔 물통"><img src="image/art.jpeg"><span>물통</span></div>
+        <div class="item" data-desc="먼지를 털어내는 청소 도구다."><img src="image/mz.jpeg"><span>먼지털이</span></div>
+        <div class="item" data-desc="조예관 4층 화장실 창틀에 놓인 화분과 목장갑, 살충제."><img src="image/mo.jpeg"><span>기타 물품</span></div>
       </div>
     </div>
   </section>
 
-  <section class="screen anatomy" id="screen-anatomy">
-    <div class="back" data-back role="button" aria-label="back"></div>
-    <h2>공간 해부</h2>
-
-    <div class="grid">
-      <div class="item" data-title="벽" data-images="l1.jpeg,l2.jpeg,l3.jpeg" data-texts="가장 많이 마주하는 면,다양한 소재">
-        <img src="l.jpeg" alt="">
-        <span>벽</span>
+  <section class="screen plain-bg" id="screen-anatomy">
+    <div class="back" data-back role="button"></div>
+    <div class="split-view">
+      <div class="view-left">
+        <img class="main-display" src="image1207/l.jpeg">
+        <h2 class="main-title">벽면 타일</h2>
+        <p class="main-desc">도서관 화장실 1층</p>
       </div>
-
-      <div class="item" data-title="바닥" data-images="da1.jpeg" data-texts="균열">
-        <img src="da.jpeg" alt="">
-        <span>바닥</span>
-      </div>
-
-      <div class="item" data-title="공간" data-images="g1.jpeg,g2.jpeg,g3.jpeg" data-texts=".">
-        <img src="g.jpeg" alt="">
-        <span>.</span>
-      </div>
-
-      <div class="item" data-title="창문" data-images="wd1.jpeg,wd2.jpeg,wd3.jpeg,wd4.jpeg,wd5.jpeg" data-texts="닫힌 상태,외부와 연결된 상태">
-        <img src="wd.jpeg" alt="">
-        <span>창문</span>
+      <div class="view-right">
+        <div class="item" data-desc="매끄러운 타일로 마감된 벽."><img src="image/l.jpeg"><span>벽</span></div>
+        <div class="item" data-desc="바롬기념관 1층 화장실"><img src="image/l1.jpeg"><span>벽</span></div>
+        <div class="item" data-desc="내구성이 요구되는 과학관 화장실 바닥의 타일면."><img src="image/da1.jpeg"><span>바닥</span></div>
+        <div class="item" data-desc="환기와 채광을 담당하는 조예관 창문."><img src="image/wd.jpeg"><span>창문</span></div>
+        <div class="item" data-desc="제2 과학관이 보이는 창문"><img src="image/wd1.jpeg"><span>창문</span></div>
+        <div class="item" data-desc="누리관 5층 화장실 창문"><img src="image/wd2.jpeg"><span>창문</span></div>
+        <div class="item" data-desc="대강당 2층 직사각형 창문"><img src="image/wd4.jpeg"><span>창문</span></div>
+        <div class="item" data-desc="정사각형 창문"><img src="image/wd5.jpeg"><span>창문</span></div>
       </div>
     </div>
   </section>
-
-  <section class="screen" id="screen-outro">
-    <div class="back" data-back role="button" aria-label="back"></div>
-    <h2>끝맺음</h2>
-    <p>
-      화장실이나 일상이나<br>
-      미끄럼 주의...
-    </p>
-  </section>
-
-  <div class="overlay" id="overlay">
-    <div class="overlay-content">
-      <h3 id="overlayTitle"></h3>
-      <p id="overlayText"></p>
-      <div class="close" id="closeOverlay">닫기</div>
-    </div>
-  </div>
-
-  <div class="cursor" id="cursor"></div>
 
   <script>
     const screens = document.querySelectorAll('.screen');
-
-    function showScreen(id) {
+    const showScreen = (id) => {
       screens.forEach(s => s.classList.remove('active'));
       document.getElementById(id).classList.add('active');
-    }
-
-    document.querySelector('.intro-image').addEventListener('click', () => showScreen('screen-menu'));
+    };
 
     document.querySelectorAll('.nav button').forEach(btn => {
-      btn.addEventListener('click', () => showScreen(btn.dataset.target));
+      btn.onclick = () => showScreen(btn.dataset.target);
     });
 
     document.querySelectorAll('[data-back]').forEach(btn => {
-      btn.addEventListener('click', () => showScreen('screen-menu'));
+      btn.onclick = () => showScreen('screen-menu');
     });
-
-    const overlay = document.getElementById('overlay');
-    const overlayTitle = document.getElementById('overlayTitle');
-    const overlayText = document.getElementById('overlayText');
-    const closeOverlay = document.getElementById('closeOverlay');
-
+    
     document.querySelectorAll('.item').forEach(item => {
-      const images = item.dataset.images.split(',');
-      const texts = item.dataset.texts.split(',');
-      let index = 0;
-      const img = item.querySelector('img');
-
-      item.addEventListener('click', e => {
-        e.stopPropagation();
-        index = (index + 1) % images.length;
-        img.src = images[index];
-        overlayTitle.textContent = item.dataset.title;
-        overlayText.textContent = texts[index];
-        overlay.classList.add('active');
-      });
+      item.onclick = function() {
+        const screen = this.closest('.screen');
+        const mainImg = screen.querySelector('.main-display');
+        const mainTitle = screen.querySelector('.main-title');
+        const mainDesc = screen.querySelector('.main-desc'); 
+        
+        mainImg.src = this.querySelector('img').src;
+        mainTitle.innerText = this.querySelector('span').innerText;
+        mainDesc.innerText = this.dataset.desc;
+      };
     });
-
-    closeOverlay.onclick = () => overlay.classList.remove('active');
-    overlay.onclick = () => overlay.classList.remove('active');
 
     const cursor = document.getElementById('cursor');
-
-    document.addEventListener('mousemove', e => {
+    document.onmousemove = (e) => {
       cursor.style.top = e.clientY + 'px';
       cursor.style.left = e.clientX + 'px';
-    });
-
-    document.addEventListener('mousedown', () => {
-      cursor.style.transform = 'translate(-50%, -50%) scale(1.6)';
-      cursor.style.background = 'rgba(0, 150, 255, 0.8)';
-    });
-
-    document.addEventListener('mouseup', () => {
-      cursor.style.transform = 'translate(-50%, -50%) scale(1)';
-      cursor.style.background = 'rgba(0, 150, 255, 0.5)';
-    });
+    };
   </script>
-
 </body>
+</html>
 </html>
